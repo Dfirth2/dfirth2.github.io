@@ -102,6 +102,8 @@ a {
 
 .hero {
   display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 48px;
   align-items: center;
   min-height: 520px;
   padding: 72px 0;
@@ -113,6 +115,10 @@ a {
 
 .hero-content {
   max-width: 760px;
+}
+
+.hero-panel {
+  align-self: center;
 }
 
 .eyebrow {
@@ -217,6 +223,20 @@ p {
   border-top: 1px solid var(--line);
 }
 
+.self-assessment-section {
+  padding-top: 64px;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 28px;
+}
+
+.section-heading p:last-child {
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
 .intro-grid,
 .two-column {
   display: grid;
@@ -227,6 +247,80 @@ p {
 
 .content-block {
   max-width: 870px;
+}
+
+.assessment-layout {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.assessment-callout {
+  position: sticky;
+  top: 96px;
+  padding: 24px;
+  color: #ffffff;
+  background: var(--primary-dark);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.assessment-callout h3 {
+  margin-bottom: 12px;
+}
+
+.assessment-callout p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.callout-divider {
+  height: 1px;
+  margin: 20px 0;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.assessment-story {
+  display: grid;
+  gap: 18px;
+}
+
+.assessment-lead {
+  margin: 0;
+  padding: 24px;
+  color: var(--ink);
+  background: #edf6f6;
+  border-left: 5px solid var(--primary);
+  border-radius: var(--radius);
+  font-size: 1.08rem;
+}
+
+.assessment-card {
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.assessment-card h3 {
+  color: var(--primary-dark);
+}
+
+.assessment-card p:last-child {
+  margin-bottom: 0;
+}
+
+.assessment-close {
+  padding: 24px;
+  background: var(--surface-alt);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.assessment-close p {
+  margin: 0;
+  font-weight: 700;
 }
 
 .summary-panel,
@@ -348,6 +442,53 @@ p {
   font-weight: 800;
 }
 
+.source-list {
+  display: grid;
+  gap: 12px;
+  max-width: 560px;
+  margin-top: 24px;
+}
+
+.source-list a {
+  position: relative;
+  display: block;
+  padding: 18px;
+  padding-right: 72px;
+  color: var(--ink);
+  text-decoration: none;
+  background: var(--surface-alt);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.source-list a:hover {
+  border-color: var(--primary);
+}
+
+.source-list span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.source-list strong {
+  display: block;
+  margin-top: 4px;
+}
+
+.source-list .download-icon {
+  position: absolute;
+  top: 50%;
+  right: 22px;
+  transform: translateY(-50%);
+  color: var(--primary);
+  font-size: 2.35rem;
+  line-height: 1;
+  text-transform: none;
+}
+
 .site-footer {
   margin-top: 40px;
   padding: 28px 16px;
@@ -395,9 +536,15 @@ p {
 
   .intro-grid,
   .two-column,
+  .assessment-layout,
+  .hero,
   .card-grid,
   .card-grid.two {
     grid-template-columns: 1fr;
+  }
+
+  .assessment-callout {
+    position: static;
   }
 
   .hero {
