@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dayne Firth II | CS-499 ePortfolio</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Main navigation">
+      <a class="brand" href="index.html">Dayne Firth II</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a class="active" href="index.html">Self-Assessment</a>
+        <a href="original.html">Original + Code Review</a>
+        <a href="artifact.html">Enhanced Artifact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">CS-499 Computer Science Capstone</p>
+        <h1>Professional ePortfolio</h1>
+        <p class="hero-copy">
+          A focused presentation of my growth through the Computer Science program, centered on the CS 350 Thermostat Project and its enhancements across software engineering, algorithms and data structures, and databases.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="artifact.html">View Enhanced Artifact</a>
+          <a class="button secondary" href="original.html">Review Original Work</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro-grid" aria-labelledby="portfolio-overview">
+      <div>
+        <p class="eyebrow">Portfolio Overview</p>
+        <h2 id="portfolio-overview">Dayne Firth II</h2>
+        <p>
+          This ePortfolio presents my capstone work for Southern New Hampshire University's CS-499 Computer Science Capstone. The portfolio highlights the progression of one artifact, the Thermostat Project from CS 350: Emerging Systems Architectures and Technologies, from its original implementation into an enhanced project that demonstrates broader computer science skills.
+        </p>
+        <p>
+          The enhancement work is organized around three required categories: software design and engineering, algorithms and data structures, and databases. Together, these categories show my ability to analyze existing code, plan meaningful improvements, implement stronger technical solutions, and communicate the value of those improvements to both technical and nontechnical audiences.
+        </p>
+      </div>
+      <aside class="summary-panel" aria-label="Capstone artifact summary">
+        <h3>Featured Artifact</h3>
+        <dl>
+          <div>
+            <dt>Course</dt>
+            <dd>CS 350: Emerging Systems Architectures and Technologies</dd>
+          </div>
+          <div>
+            <dt>Artifact</dt>
+            <dd>Thermostat Project</dd>
+          </div>
+          <div>
+            <dt>Capstone Focus</dt>
+            <dd>Software engineering, algorithms, data structures, and databases</dd>
+          </div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="section" aria-labelledby="self-assessment">
+      <p class="eyebrow">Professional Self-Assessment</p>
+      <h2 id="self-assessment">Computer Science Growth and Readiness</h2>
+      <div class="content-block">
+        <p>
+          Throughout the Computer Science program, I developed a stronger understanding of how software systems are designed, implemented, tested, and improved over time. My coursework gave me opportunities to work with programming logic, system architecture, data structures, database concepts, security considerations, and communication practices that are essential in professional software development environments.
+        </p>
+        <p>
+          The work in this portfolio demonstrates my ability to take an existing project, evaluate its strengths and limitations, and enhance it in ways that show measurable technical growth. By revisiting the Thermostat Project, I was able to move beyond simply meeting the original course requirements and focus on professional-quality improvements such as clearer structure, stronger documentation, more intentional data handling, and better alignment between design decisions and user needs.
+        </p>
+        <p>
+          My selected area of emphasis is software engineering, with attention to practical application design and maintainable implementation. The enhanced artifact reflects this focus by showing how design decisions, algorithmic thinking, and database-oriented planning can work together to create software that is easier to understand, extend, and evaluate.
+        </p>
+        <p>
+          This ePortfolio also demonstrates the communication skills required of a computer science professional. The code review, enhancement narratives, and self-assessment explain what changed, why the changes matter, and how the work aligns with the outcomes of the capstone. These materials show not only the completed technical work, but also the reasoning behind the enhancement process.
+        </p>
+      </div>
+    </section>
+
+    <section class="section cards-section" aria-labelledby="category-overview">
+      <p class="eyebrow">Enhancement Categories</p>
+      <h2 id="category-overview">Evidence of Program Outcomes</h2>
+      <div class="card-grid">
+        <article class="info-card">
+          <h3>Software Design and Engineering</h3>
+          <p>Improves structure, maintainability, documentation, and clarity so the project better reflects professional software development practices.</p>
+        </article>
+        <article class="info-card">
+          <h3>Algorithms and Data Structures</h3>
+          <p>Demonstrates growth in logic, data organization, efficiency, and problem-solving through targeted improvements to the thermostat behavior.</p>
+        </article>
+        <article class="info-card">
+          <h3>Databases</h3>
+          <p>Connects the project to persistent data concepts through planned or implemented storage, logging, configuration, or data analysis enhancements.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Dayne Firth II. CS-499 Computer Science Capstone.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      links.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
