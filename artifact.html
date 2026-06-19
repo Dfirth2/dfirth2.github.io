@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Thermostat Project | Dayne Firth II</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Main navigation">
+      <a class="brand" href="index.html">Dayne Firth II</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Self-Assessment</a>
+        <a href="original.html">Original + Code Review</a>
+        <a class="active" href="artifact.html">Enhanced Artifact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Enhanced Artifact</p>
+      <h1>CS 350 Thermostat Project</h1>
+      <p>
+        The enhanced Thermostat Project demonstrates growth across software design and engineering, algorithms and data structures, and databases by expanding the original embedded systems artifact into a more maintainable and evidence-driven capstone project.
+      </p>
+      <div class="hero-actions compact">
+        <a class="button primary" href="artifacts/enhanced/">View Enhanced Artifact Folder</a>
+        <a class="button secondary" href="artifacts/original/">Compare Original Artifact</a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="artifact-narrative">
+      <p class="eyebrow">Artifact Narrative</p>
+      <h2 id="artifact-narrative">Why This Artifact Was Selected</h2>
+      <div class="content-block">
+        <p>
+          I selected the Thermostat Project because it gave me a practical foundation for demonstrating how software controls real-world behavior. The original project required the use of state-based logic and system-level thinking, which made it a meaningful artifact to enhance for the capstone.
+        </p>
+        <p>
+          Enhancing this project allowed me to show growth beyond the original assignment. I was able to focus on the quality of the design, the clarity of the logic, and the way data could be captured or organized to support evaluation of the thermostat's behavior. This makes the project a strong representation of my progress in the Computer Science program.
+        </p>
+      </div>
+    </section>
+
+    <section class="section cards-section" aria-labelledby="enhancements">
+      <p class="eyebrow">Enhancement Categories</p>
+      <h2 id="enhancements">Implemented Growth Areas</h2>
+      <div class="feature-list">
+        <article class="feature-item">
+          <span class="feature-number">01</span>
+          <div>
+            <h3>Software Design and Engineering</h3>
+            <p>
+              The enhanced version improves the organization and maintainability of the thermostat logic. By making responsibilities clearer and improving documentation, the project becomes easier to understand, evaluate, and extend.
+            </p>
+          </div>
+        </article>
+        <article class="feature-item">
+          <span class="feature-number">02</span>
+          <div>
+            <h3>Algorithms and Data Structures</h3>
+            <p>
+              The enhancement strengthens the logic used to process temperature values, target settings, and thermostat state changes. The work demonstrates algorithmic thinking by making the decision flow more intentional and easier to reason about.
+            </p>
+          </div>
+        </article>
+        <article class="feature-item">
+          <span class="feature-number">03</span>
+          <div>
+            <h3>Databases</h3>
+            <p>
+              The database-related enhancement introduces persistent data concepts by planning or implementing a way to store readings, configuration values, or event history. This creates a clearer connection between the embedded systems artifact and broader application data management skills.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section two-column" aria-labelledby="outcomes">
+      <div>
+        <p class="eyebrow">Course Outcomes</p>
+        <h2 id="outcomes">Outcome Alignment</h2>
+        <p>
+          The enhanced artifact supports the CS-499 course outcomes by demonstrating technical communication, collaborative and professional planning, algorithmic problem solving, software engineering practices, and security-aware data handling.
+        </p>
+        <ul class="outcome-list">
+          <li>Explains technical decisions through the code review, narratives, and self-assessment.</li>
+          <li>Uses computer science concepts to improve an existing artifact.</li>
+          <li>Applies algorithmic thinking to thermostat state and control logic.</li>
+          <li>Demonstrates software engineering practices through improved structure and documentation.</li>
+          <li>Connects the project to database and data management concepts.</li>
+        </ul>
+      </div>
+      <aside class="summary-panel">
+        <h3>Artifact Evidence</h3>
+        <a class="text-link" href="artifacts/original/">Original artifact folder</a>
+        <a class="text-link" href="artifacts/enhanced/">Enhanced artifact folder</a>
+        <a class="text-link" href="original.html#code-review">Code review video section</a>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Dayne Firth II. CS-499 Computer Science Capstone.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      links.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

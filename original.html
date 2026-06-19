@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Original Project + Code Review | Dayne Firth II</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Main navigation">
+      <a class="brand" href="index.html">Dayne Firth II</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Self-Assessment</a>
+        <a class="active" href="original.html">Original + Code Review</a>
+        <a href="artifact.html">Enhanced Artifact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Original Artifact</p>
+      <h1>Thermostat Project Code Review</h1>
+      <p>
+        The original CS 350 Thermostat Project provides the foundation for the capstone enhancements. This page presents the starting point, the informal code review, and the planned improvements used to guide the enhanced artifact.
+      </p>
+    </section>
+
+    <section class="section two-column" aria-labelledby="original-overview">
+      <div>
+        <p class="eyebrow">Existing Functionality</p>
+        <h2 id="original-overview">Original Thermostat Project</h2>
+        <p>
+          The Thermostat Project from CS 350: Emerging Systems Architectures and Technologies focused on embedded systems concepts and the interaction between software logic and hardware-oriented behavior. The original version represented thermostat functionality such as reading temperature-related input, comparing current conditions against a target value, and responding with output that simulates or controls heating behavior.
+        </p>
+        <p>
+          As an artifact, this project is useful because it includes practical control logic, state-based decisions, and opportunities to improve structure, reliability, and data handling. Those qualities make it a strong foundation for demonstrating growth across the three capstone enhancement categories.
+        </p>
+        <a class="button primary" href="artifacts/original/">View Original Artifact Folder</a>
+      </div>
+      <aside class="summary-panel">
+        <h3>Before Enhancement</h3>
+        <ul class="check-list">
+          <li>Embedded systems thermostat behavior</li>
+          <li>Input, state, and output control flow</li>
+          <li>Opportunity for clearer structure and documentation</li>
+          <li>Opportunity for data persistence and analysis</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section" aria-labelledby="code-review">
+      <p class="eyebrow">Informal Code Review</p>
+      <h2 id="code-review">Code Review Video</h2>
+      <p class="section-lead">
+        The embedded code review video will appear here after the final shareable video URL is added.
+      </p>
+      <div class="video-shell">
+        <iframe
+          title="Dayne Firth II CS-499 Code Review Video"
+          srcdoc="<style>body{margin:0;display:grid;place-items:center;height:100vh;background:#f5f7fa;color:#18212f;font-family:Arial,Helvetica,sans-serif;text-align:center}strong{display:block;font-size:1.25rem;margin-bottom:.35rem}span{color:#5d6879}</style><main><strong>Code Review Video Pending</strong><span>Add the final embed URL when it is ready.</span></main>"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="button-row">
+        <span class="button secondary muted-button" aria-label="Code review video link pending">Video Link Pending</span>
+      </div>
+    </section>
+
+    <section class="section cards-section" aria-labelledby="analysis">
+      <p class="eyebrow">Code Analysis</p>
+      <h2 id="analysis">Target Areas for Improvement</h2>
+      <div class="card-grid two">
+        <article class="info-card">
+          <h3>Structure and Maintainability</h3>
+          <p>The original project can be strengthened through clearer organization, more descriptive naming, and separation of responsibilities between input handling, thermostat logic, and output behavior.</p>
+        </article>
+        <article class="info-card">
+          <h3>Logic and Efficiency</h3>
+          <p>The decision-making logic can be refined so thermostat state changes are easier to follow, test, and extend while reducing repeated or unclear conditional behavior.</p>
+        </article>
+        <article class="info-card">
+          <h3>Testing and Documentation</h3>
+          <p>Additional comments, documentation, and test-oriented thinking can make the project easier to evaluate and improve in future iterations.</p>
+        </article>
+        <article class="info-card">
+          <h3>Data Handling</h3>
+          <p>The project can better demonstrate database concepts by capturing thermostat events, configuration, or readings in a persistent data format.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="planned-enhancements">
+      <p class="eyebrow">Enhancement Plan</p>
+      <h2 id="planned-enhancements">Planned Capstone Improvements</h2>
+      <div class="content-block">
+        <p>
+          The enhancement plan builds on the original thermostat behavior by improving the design of the application, strengthening the logic used to evaluate thermostat state, and adding a database-oriented component for storing or analyzing relevant thermostat data.
+        </p>
+        <p>
+          These improvements are intended to show growth from the original course project into a more complete artifact that demonstrates professional software engineering judgment, algorithmic reasoning, and an understanding of persistent data.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Dayne Firth II. CS-499 Computer Science Capstone.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      links.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
