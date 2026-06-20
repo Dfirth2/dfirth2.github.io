@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Enhanced Thermostat Project | Dayne Firth II</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260620-2">
 </head>
 <body>
   <header class="site-header">
@@ -25,26 +25,24 @@
 
   <main>
     <section class="page-hero">
-      <p class="eyebrow">Enhanced Artifact</p>
-      <h1>CS 350 Thermostat Project</h1>
+      <h1>Enhanced Artifacts</h1>
       <p>
-        The enhanced Thermostat Project demonstrates growth across software design and engineering, algorithms and data structures, and databases by expanding the original embedded systems artifact into a more maintainable and evidence-driven capstone project.
+       The enhanced Thermostat Project demonstrates my growth across software engineering and design, algorithms and data structures, and databases. The original embedded thermostat was expanded from a local Raspberry Pi device into a full-stack IoT-style system with a web dashboard, authentication, scheduling logic, database storage, and live device communication.
       </p>
       <div class="hero-actions compact">
-        <a class="button primary" href="artifacts/enhanced/">View Enhanced Artifact Folder</a>
-        <a class="button secondary" href="artifacts/original/">Compare Original Artifact</a>
+        <a class="button primary" href="artifacts/enhanced/">View Enhanced Code</a>
+        <a class="button secondary" href="artifacts/original/">View Original Artifact</a>
       </div>
     </section>
 
     <section class="section" aria-labelledby="artifact-narrative">
-      <p class="eyebrow">Artifact Narrative</p>
       <h2 id="artifact-narrative">Why This Artifact Was Selected</h2>
       <div class="content-block">
         <p>
-          I selected the Thermostat Project because it gave me a practical foundation for demonstrating how software controls real-world behavior. The original project required the use of state-based logic and system-level thinking, which made it a meaningful artifact to enhance for the capstone.
+          I selected the Thermostat Project because it gave me a practical foundation for showing how software can control real-world hardware. The original project used embedded system logic to monitor temperature, control heating and cooling modes, and respond to physical button input on a Raspberry Pi. Because it already connected software decisions to physical behavior, it was a strong artifact to expand for my capstone.
         </p>
         <p>
-          Enhancing this project allowed me to show growth beyond the original assignment. I was able to focus on the quality of the design, the clarity of the logic, and the way data could be captured or organized to support evaluation of the thermostat's behavior. This makes the project a strong representation of my progress in the Computer Science program.
+          Enhancing this project allowed me to show growth beyond the original assignment by turning a local-only thermostat into a full-stack IoT-style system. I improved the software design with a web dashboard and backend API, added scheduling logic to manage thermostat events, and included database storage so settings, schedules, and activity could persist over time. These improvements make the project a strong representation of my progress in software engineering, algorithms and data structures, databases, and security.
         </p>
       </div>
     </section>
@@ -55,55 +53,106 @@
       <div class="feature-list">
         <article class="feature-item">
           <span class="feature-number">01</span>
-          <div>
+          <div class="feature-copy">
             <h3>Software Design and Engineering</h3>
             <p>
-              The enhanced version improves the organization and maintainability of the thermostat logic. By making responsibilities clearer and improving documentation, the project becomes easier to understand, evaluate, and extend.
+              The enhanced version expands the original Raspberry Pi thermostat into a full-stack IoT-style system. The project now separates responsibilities between the Angular dashboard, FastAPI backend, SQLite database, authentication controls, and Raspberry Pi device logic. This improves maintainability, testing, security, and future expansion.
             </p>
           </div>
+          <a class="narrative-link" href="artifacts/enhanced/Dayne Firth - Software Design and Engineering Narrative.docx" download>
+            <strong>Narrative</strong>
+            <span class="download-icon" aria-hidden="true">⤓</span>
+          </a>
         </article>
         <article class="feature-item">
           <span class="feature-number">02</span>
-          <div>
+          <div class="feature-copy">
             <h3>Algorithms and Data Structures</h3>
             <p>
-              The enhancement strengthens the logic used to process temperature values, target settings, and thermostat state changes. The work demonstrates algorithmic thinking by making the decision flow more intentional and easier to reason about.
+              The enhancement adds scheduling logic that uses structured event objects and collections to manage thermostat events. Events are sorted by day and time, filtered by user and status, checked for conflicts, and processed to identify the next scheduled event. This allows the thermostat to follow planned behavior instead of relying only on manual controls.
             </p>
           </div>
+          <a class="narrative-link" href="artifacts/enhanced/Dayne Firth - Algorithms and Data Structures Narrative.docx" download>
+            <strong>Narrative</strong>
+            <span class="download-icon" aria-hidden="true">⤓</span>
+          </a>
         </article>
         <article class="feature-item">
           <span class="feature-number">03</span>
-          <div>
+          <div class="feature-copy">
             <h3>Databases</h3>
             <p>
-              The database-related enhancement introduces persistent data concepts by planning or implementing a way to store readings, configuration values, or event history. This creates a clearer connection between the embedded systems artifact and broader application data management skills.
+              The database enhancement adds persistent storage for users, thermostat settings, scheduled events, and activity logs. The system uses backend API routes to create, retrieve, update, and manage stored data, allowing the dashboard and Raspberry Pi thermostat to share consistent information across the full application.
             </p>
           </div>
+          <a class="narrative-link" href="artifacts/enhanced/Dayne Firth - Database Narrative.docx" download>
+            <strong>Narrative</strong>
+            <span class="download-icon" aria-hidden="true">⤓</span>
+          </a>
         </article>
       </div>
     </section>
 
-    <section class="section two-column" aria-labelledby="outcomes">
-      <div>
-        <p class="eyebrow">Course Outcomes</p>
-        <h2 id="outcomes">Outcome Alignment</h2>
+    <section class="section gallery-section" aria-labelledby="artifact-gallery">
+      <div class="section-heading">
+        <p class="eyebrow">Artifact Gallery</p>
+        <h2 id="artifact-gallery">Enhanced Thermostat Evidence</h2>
         <p>
-          The enhanced artifact supports the CS-499 course outcomes by demonstrating technical communication, collaborative and professional planning, algorithmic problem solving, software engineering practices, and security-aware data handling.
+          These images provide visual evidence of the enhanced Thermostat Project, including the original Raspberry Pi hardware, the web-based dashboard, authentication flow, scheduling features, activity tracking, and database-backed API functionality.
         </p>
-        <ul class="outcome-list">
-          <li>Explains technical decisions through the code review, narratives, and self-assessment.</li>
-          <li>Uses computer science concepts to improve an existing artifact.</li>
-          <li>Applies algorithmic thinking to thermostat state and control logic.</li>
-          <li>Demonstrates software engineering practices through improved structure and documentation.</li>
-          <li>Connects the project to database and data management concepts.</li>
-        </ul>
       </div>
-      <aside class="summary-panel">
-        <h3>Artifact Evidence</h3>
-        <a class="text-link" href="artifacts/original/">Original artifact folder</a>
-        <a class="text-link" href="artifacts/enhanced/">Enhanced artifact folder</a>
-        <a class="text-link" href="original.html#code-review">Code review video section</a>
-      </aside>
+
+      <div class="slideshow" aria-label="Enhanced thermostat image slideshow">
+        <div class="slide-frame">
+          <figure class="slide active">
+            <img src="assets/css/imgs/IMG1.png" alt="Physical thermostat device running on Raspberry Pi hardware">
+            <figcaption>Physical thermostat device running on Raspberry Pi hardware with LCD output, button controls, and mode indicator LED.</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="assets/css/imgs/IMG2.png" alt="Dashboard before authentication with controls disabled" loading="lazy">
+            <figcaption>Dashboard before authentication. Thermostat controls and scheduling actions are disabled until the user logs in.</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="assets/css/imgs/IMG3.png" alt="Login validation error for incorrect credentials" loading="lazy">
+            <figcaption>Login validation rejects incorrect credentials and displays an error without giving detailed account information.</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="assets/css/imgs/IMG4.png" alt="Dashboard after successful authentication with controls enabled" loading="lazy">
+            <figcaption>After successful authentication, the dashboard enables thermostat controls and event management features.</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="assets/css/imgs/IMG5.png" alt="Dashboard showing live thermostat connection status" loading="lazy">
+            <figcaption>Dashboard showing live thermostat connection status and current system state.</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="assets/css/imgs/IMG6.png" alt="Schedule event form for creating weekly thermostat events" loading="lazy">
+            <figcaption>Schedule event form used to create weekly thermostat events with day, time, mode, target temperature, and active status.</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="assets/css/imgs/IMG7.png" alt="Sorted scheduled events and recent activity log" loading="lazy">
+            <figcaption>Scheduled events are sorted by day and time, can be activated or deactivated, and actions are logged in recent activity.</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="assets/css/imgs/IMG8.png" alt="FastAPI schedules endpoint returning database records" loading="lazy">
+            <figcaption>FastAPI GET /schedules/ endpoint returning stored schedule records from the database. This demonstrates persistent database storage and retrieval for thermostat events.</figcaption>
+          </figure>
+        </div>
+
+        <div class="slideshow-controls" aria-label="Slideshow controls">
+          <button class="slide-button" type="button" data-slide-action="previous" aria-label="Show previous image">‹</button>
+          <div class="slide-dots" aria-label="Choose image">
+            <button class="active" type="button" data-slide-index="0" aria-label="Show image 1"></button>
+            <button type="button" data-slide-index="1" aria-label="Show image 2"></button>
+            <button type="button" data-slide-index="2" aria-label="Show image 3"></button>
+            <button type="button" data-slide-index="3" aria-label="Show image 4"></button>
+            <button type="button" data-slide-index="4" aria-label="Show image 5"></button>
+            <button type="button" data-slide-index="5" aria-label="Show image 6"></button>
+            <button type="button" data-slide-index="6" aria-label="Show image 7"></button>
+            <button type="button" data-slide-index="7" aria-label="Show image 8"></button>
+          </div>
+          <button class="slide-button" type="button" data-slide-action="next" aria-label="Show next image">›</button>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -112,13 +161,56 @@
   </footer>
 
   <script>
-    const toggle = document.querySelector('.nav-toggle');
-    const links = document.querySelector('.nav-links');
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.querySelector('.nav-toggle');
+      const links = document.querySelector('.nav-links');
 
-    toggle.addEventListener('click', () => {
-      const expanded = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!expanded));
-      links.classList.toggle('open');
+      if (toggle && links) {
+        toggle.addEventListener('click', () => {
+          const expanded = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', String(!expanded));
+          links.classList.toggle('open');
+        });
+      }
+
+      const slideshow = document.querySelector('.slideshow');
+      if (!slideshow) {
+        return;
+      }
+
+      const slides = Array.from(slideshow.querySelectorAll('.slide'));
+      const dots = Array.from(slideshow.querySelectorAll('[data-slide-index]'));
+      const previous = slideshow.querySelector('[data-slide-action="previous"]');
+      const next = slideshow.querySelector('[data-slide-action="next"]');
+      let activeSlide = 0;
+
+      if (!slides.length || !previous || !next) {
+        return;
+      }
+
+      function showSlide(index) {
+        activeSlide = (index + slides.length) % slides.length;
+
+        slides.forEach((slide, slideIndex) => {
+          slide.classList.toggle('active', slideIndex === activeSlide);
+        });
+
+        dots.forEach((dot, dotIndex) => {
+          dot.classList.toggle('active', dotIndex === activeSlide);
+          dot.setAttribute('aria-current', dotIndex === activeSlide ? 'true' : 'false');
+        });
+      }
+
+      previous.addEventListener('click', () => showSlide(activeSlide - 1));
+      next.addEventListener('click', () => showSlide(activeSlide + 1));
+
+      dots.forEach((dot) => {
+        dot.addEventListener('click', () => {
+          showSlide(Number(dot.dataset.slideIndex));
+        });
+      });
+
+      showSlide(0);
     });
   </script>
 </body>

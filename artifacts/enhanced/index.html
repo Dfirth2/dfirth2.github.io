@@ -4,21 +4,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Enhanced Thermostat Project Files</title>
-  <link rel="stylesheet" href="../../assets/css/styles.css">
+  <link rel="stylesheet" href="../../assets/css/styles.css?v=20260620">
 </head>
 <body>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Main navigation">
+      <a class="brand" href="../../index.html">Dayne Firth II</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="../../index.html">Self-Assessment</a>
+        <a href="../../original.html">Original + Code Review</a>
+        <a class="active" href="../../artifact.html">Enhanced Artifact</a>
+      </div>
+    </nav>
+  </header>
+
   <main class="artifact-folder">
     <section class="page-hero">
       <p class="eyebrow">Enhanced Artifact Files</p>
       <h1>Enhanced Thermostat Project</h1>
       <p>
-        Add the enhanced CS 350 Thermostat Project source files to this folder. This page gives portfolio reviewers a stable location for the completed capstone artifact.
+        Download the enhanced thermostat source package and the written narratives that explain the software design and engineering, algorithms and data structures, and database enhancements.
       </p>
+
+      <div class="source-list" aria-label="Enhanced source files">
+        <a href="thermostat-enhancement.zip" download>
+          <span>Thermostat Enhancement Package</span>
+          <strong>thermostat-enhancement.zip</strong>
+          <span class="download-icon" aria-hidden="true">⤓</span>
+        </a>
+        <a href="Dayne Firth - Software Design and Engineering Narrative.docx" download>
+          <span>Software Design and Engineering Narrative</span>
+          <strong>Dayne Firth - Software Design and Engineering Narrative.docx</strong>
+          <span class="download-icon" aria-hidden="true">⤓</span>
+        </a>
+        <a href="Dayne Firth - Algorithms and Data Structures Narrative.docx" download>
+          <span>Algorithms and Data Structures Narrative</span>
+          <strong>Dayne Firth - Algorithms and Data Structures Narrative.docx</strong>
+          <span class="download-icon" aria-hidden="true">⤓</span>
+        </a>
+        <a href="Dayne Firth - Database Narrative.docx" download>
+          <span>Database Narrative</span>
+          <strong>Dayne Firth - Database Narrative.docx</strong>
+          <span class="download-icon" aria-hidden="true">⤓</span>
+        </a>
+      </div>
       <div class="hero-actions compact">
-        <a class="button primary" href="../../artifact.html">Back to Enhanced Artifact</a>
-        <a class="button secondary" href="../../original.html">Compare Original Work</a>
+        <a class="button primary" href="../../artifact.html">View Enhanced Artifact</a>
+        <a class="button secondary" href="../../original.html">Original + Code Review</a>
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Dayne Firth II. CS-499 Computer Science Capstone.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      links.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
